@@ -14,7 +14,11 @@ In the "app" folder, we have the controllers, middlewares and application models
 
  - In the "forgot_password" route, basically a request is made using the "mailer" package (MailTrap), which searches the user for the database, and with the email he searches for with "req.body", sends a message with a new token, that token has one hour after being created to be used.
 
- - Every time a new request is made, the authController performs a new authentication to check whether the generated token is valid or not.
+ - Every time a new request is made, the authController performs a new authentication to check whether the generated token is valid or not.  
+
+The projectController.js, basically controls the projects haha, simple isn't it? He is the "CRUD" of the application.  
+
+## The models
 
 
 
