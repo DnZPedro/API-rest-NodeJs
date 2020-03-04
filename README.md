@@ -1,9 +1,28 @@
 # API NodeRest NodeJs
 
-This Node REST API, briefly contains: a registration system, user authentication, unique user token, password recovery by email (TrapMail), and a basic CRUD.  
+This node REST API briefly contains: a registration system, user authentication, unique user token, password recovery by email (TrapMail) and a basic CRUD. Debug with Insomnia. 
 
-## Details
+## Controllers, middlewares and models
 
-The src folder contains basically the entire API  
+In the "app" folder, we have the controllers, middlewares and application models, by far the controllers are the main part of the application so I will emphasize it.  
 
-In the app folder, we have another 3 folders that are very important for the entire API, the "controllers", the "middlewares", and the "models", for MongoDB
+>The authController, basically controls all authentication, it uses the modules "express", "bcrypt", "jsonwebtoken" and "mongoose".  
+
+ - It contains a function called "generateToken", which receives parameters inside an object, and using "jwt", it creates a token for the user and from that token he can access it or not.  
+
+ - The authController also contains the routes to authenticate, register a new user, a "forgot my password" route and a route to recover your password.
+
+ - In the "forgot_password" route, basically a request is made using the "mailer" package (MailTrap), which searches the user for the database, and with the email he searches for with "req.body", sends a message with a new token, that token has one hour after being created to be used.
+
+ - Every time a new request is made, the authController performs a new authentication to check whether the generated token is valid or not.
+
+
+
+
+
+
+
+
+
+
+
