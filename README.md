@@ -2,7 +2,7 @@
 
 This Node REST API, briefly contains: a registration system, user authentication, unique user token, password recovery by email (TrapMail), and a basic CRUD.  
 
-### Details
+## Details
 
 The src folder contains basically the entire API  
 
