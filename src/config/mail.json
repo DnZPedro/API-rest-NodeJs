@@ -1,6 +1,6 @@
 {
     "host": "smtp.mailtrap.io",
-    "port": 2525,
-    "user": "d9dd268dad2723",
-    "pass": "a212370a29491e"
+    "port": "your-port",
+    "user": "your-user",
+    "pass": "your-pass"
 }
