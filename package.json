@@ -1,12 +1,12 @@
 {
   "name": "api-NodeJs",
   "version": "1.0.0",
-  "description": "",
+  "description": "This node REST API briefly contains: a registration system, user authentication, unique user token, password recovery by email (TrapMail) and a basic CRUD. Debug with Insomnia. ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "PedroHV",
   "license": "ISC"
 }
