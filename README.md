@@ -20,4 +20,10 @@ The projectController.js, basically controls the projects haha, simple isn't it?
 
 ## Models  
 
-We have 3 models, **project.js**, where we create our projects, **task.js**, which is integrated with the project and lastly **user.js**, which is where we create our users.
+We have 3 models, **project.js**, where we create our projects, **task.js**, which is integrated with the project and lastly **user.js**, which is where we create our users.  
+
+As the application got more extensive, MongoDB's n -> n (1 to 1) system ends up not being so useful, because whenever we create a new project with the **"tasks"**, it creates a *new task*, the created task has a unique id, and contains the project id as well, it may be that with many tasks being created separately, the database becomes too heavy to run.
+
+ > If your application has become too extensive, it is recommended to switch to a non-relational database (MySQL, Postgrees...).
+
+ 
