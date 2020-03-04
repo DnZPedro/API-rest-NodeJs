@@ -38,3 +38,20 @@ In the "*config*" folder, we have two .json files, you can already imagine what 
 
  - The **mail.json** file basically contains the data that MailTrap uses to make the connection between them and your application. *Nothing very relevant*.
 
+## Database
+
+The versatility of MongoDB is what makes me love it the most, in other databases, creating a "*table*", requires a few lines of code before you even start using it, MongoDB, by connecting you already start it and automatically create the collection. Simply incredible.
+
+## Modules
+
+The **"modules"** folder, contains a file called **mailer.js**, well, when I used this package for the first time I had a little difficulty, a lot has already been deprecated, but that's it.
+
+ - This file "*configures*" the mailer to send the password recovery email, when I was programming I had to add a const "**handlebarOptions**", without it, the node would simply break to try to execute it. Again... A lot has already been deprecated.
+
+## Resources
+
+The "**resources**" folder, contains only one thing, the "**forgot_password**" page, this page is necessary for the "*mailer*" package to send the password recovery email, basically it contains a message and a *new token generated* from that function "**generateToken**", with 1 hour to be used.
+
+ >After 1 hour, if the token is not used, when the authController attempts to verify it, entry will be denied.
+
+**So that's it folks, I'm a dev apprentice, I have been programming for just over 6 months, and this API is a great brand for everything I've studied so far.**
