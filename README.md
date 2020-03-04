@@ -26,4 +26,15 @@ As the application got more extensive, MongoDB's n -> n (1 to 1) system ends up 
 
  > If your application has become too extensive, it is recommended to switch to a non-relational database (MySQL, Postgrees...).
 
- 
+## Middlewares
+
+The middleware is like "*invaders*" haha ​​but in the good sense, they intercept the request made and from the received parameters it acts, in the case of this middleware, it basically does some checks to know if the user token is valid. It checks the formatting of the token, and whether it was provided or not.
+
+## Config
+
+In the "*config*" folder, we have two .json files, you can already imagine what each one does by name.    
+
+ - **Auth.json**, contains a *secret key*, so mysterious... This secret key is used by controllers when the *user's password is generated*, it is like a md5 hash from PHP. You can generate this secret key from websites, or even own algorithms, be happy about it.
+
+ - The **mail.json** file basically contains the data that MailTrap uses to make the connection between them and your application. *Nothing very relevant*.
+
